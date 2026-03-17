@@ -1,5 +1,37 @@
-<script src="https://www.freevisitorcounters.com/auth.php?id=f33f5d77a41c1968506f804445e3d2d5f140be88"></script>
-<script src="https://www.freevisitorcounters.com/en/home/counter/823706/t/0">/*<![CDATA[*/</center>/*]]>*/</script>
-<body oncontextmenu="return!1" onkeydown="return!1" onmousedown="return!1">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Visitor Counter</title>
+    <style>
+        body { 
+            -webkit-user-select: none; 
+            -moz-user-select: none; 
+            -ms-user-select: none; 
+            user-select: none; 
+        }
+    </style>
+</head>
+<body>
+
+<!-- KODE COUNTER - JANGAN DIUBAH -->
 <center>
+<script src="https://www.freevisitorcounters.com/auth.php?id=f33f5d77a41c1968506f804445e3d2d5f140be88"></script>
+<script src="https://www.freevisitorcounters.com/en/home/counter/823706/t/0"></script>
 <a href="http://www.freevisitorcounters.com">.</a>
+</center>
+<!-- AKHIR KODE COUNTER -->
+
+<script>
+// Proteksi di luar area counter
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.onkeydown = function(e) {
+    if(e.keyCode == 123) return false; // F12
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) return false;
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) return false;
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) return false;
+}
+</script>
+
+</body>
+</html>
