@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Visitor Counter</title>
+    <style>
+        body { 
+            -webkit-user-select: none; 
+            -moz-user-select: none; 
+            -ms-user-select: none; 
+            user-select: none; 
+        }
+    </style>
+</head>
+<body>
+
+ 
+<!-- KODE COUNTER - JANGAN DIUBAH -->
+<center>
+<script src="https://www.freevisitorcounters.com/auth.php?id=d9165d318f87b0a502c8dd6013e83e8d8d087a87"></script>
+<script src="https://www.freevisitorcounters.com/en/home/counter/1522483/t/0"></script>
+<a href="http://www.freevisitorcounters.com">.</a>
+</center>
+<!-- AKHIR KODE COUNTER -->
+
+<script>
+// Proteksi di luar area counter
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.onkeydown = function(e) {
+    if(e.keyCode == 123) return false; // F12
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) return false;
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) return false;
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) return false;
+}
+</script>
+
+</body>
+</html>
